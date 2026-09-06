@@ -1,0 +1,21 @@
+http://localhost:8080/
+
+python3 -m http.server 8001 --directory D:\location\
+
+python3 -m http.server 8090
+
+
+<iframe width="1116" height="496" src="https://www.youtube.com/embed/jeHs1i0pSbs" title="我就像個笑話😅 / 思念成災  (繁中字幕)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1679662110150828%2F&show_text=false&width=357&t=0" width="357" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+
+
+
+
+
+
+
+
+
